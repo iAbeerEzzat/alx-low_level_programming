@@ -6,7 +6,7 @@
  * Description: print 0-9 using putchar
  *		while using int variable
  *
- * return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 	{
 		/*convert digit to ASCII representation*/
 		putchar(digit + '00');
-		digit(++;
+		digit++;
 	}
 	putchar('\n');
 
