@@ -4,29 +4,15 @@
 *@str: string to capitalize
 *Return:returns the capitalized string
 */
+
 char *cap_string(char *str)
 {
-	int index = 0;
-
-	while (str[++index])
+	for (int i = 0; str[i] != '\0'; i++)
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
-
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
+	// capitalize the first letter of each word
+	if (i == 0 || isspace(str[i-1])) {
+		str[i] = toupper(str[i]);
 	}
-	return (str);
+	}
+	return str;
 }
