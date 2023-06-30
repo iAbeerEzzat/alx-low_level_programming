@@ -4,13 +4,12 @@
  * print_number - print numbers chars
  * @n: integer params
  * Return: Always 0 (Success)
- */
+*/
 
-void print_number(int n)
+void print_number(int n);
 {
 	unsigned int n1;
-
-	n1 = n;
+	(n1 = n);
 
 	if (n < 0)
 	{
@@ -24,4 +23,3 @@ void print_number(int n)
 	}
 	_putchar((n1 % 10) + 48);
 }
-
