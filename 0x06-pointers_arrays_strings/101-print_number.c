@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
 */
 
-void print_number(int n);
+void print_number(int n)
 {
 	unsigned int n1;
 	(n1 = n);
